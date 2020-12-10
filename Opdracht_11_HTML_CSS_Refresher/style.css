@@ -1,0 +1,101 @@
+body {
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    padding-left: 25px;
+}
+
+
+hr.grijs{
+
+    border-top: 1px solid rgb(190, 189, 189);
+    padding-right: 0ch;
+}
+
+.headercarla {
+
+    display: grid;
+    width: 500px;
+    grid-template-columns: 10px fr 50px 10px ;
+    grid-template-rows: 20px 1fr 1fr auto ;
+  
+    grid-template-areas:
+    ". h1carla imagecarla ."
+    ". h2carla imagecarla ."
+    ". h2carlarequest h2carlarequest ."
+    ". accept decline ."
+    ;
+    height: 300px;
+    border: 2px solid rgb(190, 189, 189);
+    border-radius: 15px;
+   
+    
+}
+
+.h1carla {
+
+    grid-area: h1carla;
+    font-weight: bold;
+    padding-left: 25px;
+}
+
+.imagecarla {
+
+    grid-area: imagecarla;
+    margin-top: 25px;
+    margin-right: 25px;
+   
+}
+
+.h2carla {
+
+    grid-area: h2carla;
+    color: rgb(170, 169, 169);
+    padding-left: 25px;
+}
+
+.h2carlarequest {
+
+    grid-area: h2carlarequest ;
+    font-weight: lighter;
+    color: rgb(77, 76, 76);
+    padding-left: 25px;
+  
+    
+}
+
+.pbutton {
+
+    padding-left: 75px;
+
+}
+
+.accept {
+
+    grid-area: accept;
+    border: 3px solid rgb(4, 204, 4);
+    color: rgb(4, 204, 4);
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: larger;
+    
+}
+
+.decline {
+
+    grid-area: decline;
+    border: 3px solid red;
+    color: red;
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: larger;
+  
+    
+}
+
